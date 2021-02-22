@@ -33,8 +33,14 @@
     <div class="flexitem">
       <label>Posts</label>
       <select #posts>
+        <option value="10">
+          10
+        </option>
         <option value="20" selected>
           20
+        </option>
+        <option value="30">
+          30
         </option>
         <option value="50">
           50
@@ -47,10 +53,10 @@
     </div>
   </section>
 </section>
-
 <section *ngIf="!feedService.loading; else loading" style="width:auto;">
+  <hr />
   <h3>{{header}}</h3>
-  <hr/>
+  <hr />
   <app-feed-item *ngFor="let feed of feed.feed" [feedItem]="feed"></app-feed-item>
 </section>
 <ng-template #loading>

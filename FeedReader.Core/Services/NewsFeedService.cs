@@ -53,12 +53,19 @@ namespace FeedReader.Core.Services
             List<FeedItem> data = _feed;
             IOrderedEnumerable<FeedItem> orderedFeed = GetSortedFeed(data, sort, order);
 
-            return orderedFeed
+            try
+            {
+                return orderedFeed
                     .Select((feed, index) => new { feed, index })
                     .GroupBy(x => x.index / posts, y => y.feed)
                     .Skip(page - 1)
                     .Select(x => x.ToList())
                     .First();
+            }
+            catch
+            {
+                return new List<FeedItem>();
+            }
         }
         #endregion
 
