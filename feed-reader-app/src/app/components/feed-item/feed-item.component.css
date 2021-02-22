@@ -1,0 +1,16 @@
+article {
+    padding: 5px;
+}
+.flexbox {
+  display: flex;
+  padding: 5px 0 5px 0;
+}
+
+.flexitem {
+  width: 25%;
+  margin: 0 5px 0 5px;
+}
+
+.flexitem-tab {
+  margin-right: auto;
+}

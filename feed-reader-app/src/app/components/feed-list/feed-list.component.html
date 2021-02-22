@@ -1,0 +1,60 @@
+<section>
+  <mat-checkbox [(ngModel)]="isArchive">Include Archives</mat-checkbox>
+  <button class="flexitem" (click)="sortFeed(page.value, posts.value, sort.value, order.value)">
+    Refresh List
+  </button>
+</section>
+<section class="flex-container">
+  <section class="flexbox">    
+    <div class="flexitem">
+      <label>Sort by:&nbsp;</label>
+      <select #sort>
+        <option value="t">
+          Title
+        </option>
+        <option value="d" selected>
+          Date
+        </option>
+      </select>
+    </div>
+    <div class="flexitem">
+      <label>Order:&nbsp;</label>
+      <select #order>
+        <option value="a">
+          Ascending
+        </option>
+        <option value="d" selected>
+          Descending
+        </option>
+      </select>
+    </div>   
+  </section>
+  <section style="text-align:right" class="flexbox" [attr.style]="!feed.isLatest ? null : 'display:none'">
+    <div class="flexitem">
+      <label>Posts</label>
+      <select #posts>
+        <option value="20" selected>
+          20
+        </option>
+        <option value="50">
+          50
+        </option>
+      </select>
+    </div>
+    <div class="flexitem">
+      <label>Page</label>
+      <input type="number" min="0" value="1" #page style="max-width:50px"/>
+    </div>
+  </section>
+</section>
+
+<section *ngIf="!feedService.loading; else loading" style="width:auto;">
+  <h3>{{header}}</h3>
+  <hr/>
+  <app-feed-item *ngFor="let feed of feed.feed" [feedItem]="feed"></app-feed-item>
+</section>
+<ng-template #loading>
+  <section>
+    <img src="/loading.gif" />
+  </section>
+</ng-template>

@@ -1,0 +1,18 @@
+.flex-container {
+  display: flex;
+  width:inherit;
+}
+.flexbox {
+  display: flex;
+  padding: 5px 0 5px 0;
+  width: 50%;
+}
+
+.flexitem {
+  width: auto;
+  margin: 0 5px 0 5px;
+}
+
+.flexitem-tab {
+  margin-right: auto;
+}

@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FeedReader.Api", "FeedReader.Api\FeedReader.Api.csproj", "{EEE0E63E-C3DA-491D-8022-448F575DE860}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "feed-reader-app", "feed-reader-app\", "{8D9B0C23-E9DB-49BE-9068-B76D3608A99D}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_60146"
+		Debug.AspNetCompiler.PhysicalPath = "feed-reader-app\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60146\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_60146"
+		Release.AspNetCompiler.PhysicalPath = "feed-reader-app\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60146\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "60146"
+		SlnRelativePath = "feed-reader-app\"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeedReader.Core", "FeedReader.Core\FeedReader.Core.csproj", "{C6AF84B7-590D-45EB-A199-AA02291427A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EEE0E63E-C3DA-491D-8022-448F575DE860}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEE0E63E-C3DA-491D-8022-448F575DE860}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEE0E63E-C3DA-491D-8022-448F575DE860}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEE0E63E-C3DA-491D-8022-448F575DE860}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D9B0C23-E9DB-49BE-9068-B76D3608A99D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D9B0C23-E9DB-49BE-9068-B76D3608A99D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D9B0C23-E9DB-49BE-9068-B76D3608A99D}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D9B0C23-E9DB-49BE-9068-B76D3608A99D}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{C6AF84B7-590D-45EB-A199-AA02291427A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6AF84B7-590D-45EB-A199-AA02291427A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6AF84B7-590D-45EB-A199-AA02291427A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6AF84B7-590D-45EB-A199-AA02291427A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FC875F15-2929-4097-A3BE-6FC9F051D6EF}
+	EndGlobalSection
+EndGlobal

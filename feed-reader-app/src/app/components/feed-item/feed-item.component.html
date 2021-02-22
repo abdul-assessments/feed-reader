@@ -1,0 +1,19 @@
+<article *ngIf="feedItem.title">
+  <a href="{{feedItem.url}}" target="_blank" title="External link. Link will open in new tab">
+    <h3>
+      {{feedItem.title}}
+    </h3>
+  </a>
+  <p>
+    {{feedItem.summary}}
+  </p>
+  <div class="flexbox">
+    <div class="flexitem-tab">
+
+    </div>
+  </div>
+  <div class="feed-date">
+    Published Date: {{feedItem.publishDate}}
+  </div>
+</article>
+<hr/>
